@@ -3,7 +3,7 @@ import Message from '../models/message.model.js';
 import cloudinary from "../lib/cloudinary.js";
 import { getReceiverSocketId, io } from "../lib/socket.js";
 
-export const getUsersForSideBar = async (req, res) => {
+export const getUsersForSidebar = async (req, res) => {
     try {
         const currentLoggedinUser = req.user._id;
         // i should not be in the sidebar as i am logged in user ok thats why filtering users
